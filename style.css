@@ -3572,3 +3572,63 @@ html { scroll-padding-top: 145px; }
   padding: 0;
   position: relative;
 }
+
+/* SABAN Community Popup - Fix Overlapping Text */
+
+.community-dialog-copy {
+  position: relative;
+  color: #222;
+}
+
+/* Hide text already included in the background image */
+.community-dialog-copy > .eyebrow,
+.community-dialog-copy > h2,
+.community-dialog-copy > p {
+  display: none;
+}
+
+/* Place real form over image */
+.community-dialog [data-newsletter] {
+  position: absolute;
+  left: 53%;
+  top: 55%;
+  width: 43%;
+  margin: 0;
+  gap: 8px;
+  z-index: 2;
+}
+
+/* Hide duplicate email label */
+.community-dialog [data-newsletter] > label[for="newsletter-email"] {
+  display: none;
+}
+
+/* Real email field */
+.community-dialog [data-newsletter] > input[type="email"] {
+  width: 100%;
+  height: 44px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid #777;
+  border-radius: 4px;
+  padding: 10px;
+  color: #222;
+}
+
+/* Real subscribe button */
+.community-dialog [data-newsletter] > button[type="submit"] {
+  background: #124575;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Keep consent checkbox visible */
+.community-dialog .consent {
+  color: #222;
+  background: rgba(255,255,255,0.9);
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
