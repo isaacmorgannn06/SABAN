@@ -3952,3 +3952,35 @@ html { scroll-padding-top: 145px; }
 .community-dialog #newsletter-email:focus-visible {
   outline: 3px solid #e57a2d !important;
 }
+
+/* SABAN - Correct subscription form order */
+
+.community-dialog form[data-newsletter] {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+/* Email first */
+.community-dialog #newsletter-email {
+  order: 1 !important;
+}
+
+/* Consent checkbox second */
+.community-dialog form[data-newsletter] .consent {
+  order: 2 !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 8px !important;
+  background: #fff !important;
+  color: #222 !important;
+  line-height: 1.4 !important;
+}
+
+/* Subscribe button last */
+.community-dialog form[data-newsletter] > button[type="submit"] {
+  order: 3 !important;
+  position: relative !important;
+  margin: 0 !important;
+  z-index: 2 !important;
+}
