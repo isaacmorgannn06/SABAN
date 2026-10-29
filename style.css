@@ -3913,3 +3913,42 @@ html { scroll-padding-top: 145px; }
     border-radius: 8px;
   }
 }
+
+/* SABAN Popup - Final Form Cleanup */
+
+/* Remove extra email field outline */
+.community-dialog #newsletter-email {
+  appearance: none;
+  box-shadow: none !important;
+  outline: none;
+  background: #fff !important;
+}
+
+/* Remove duplicate visible email label */
+.community-dialog form[data-newsletter]
+  > label[for="newsletter-email"] {
+  display: none !important;
+}
+
+/* Hide any old button text behind the real button */
+.community-dialog form[data-newsletter]
+  > button[type="submit"] {
+  position: relative;
+  z-index: 10;
+  background: #124575 !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+/* Keep consent above button */
+.community-dialog form[data-newsletter] .consent {
+  position: relative;
+  z-index: 11;
+  background: #fff !important;
+  border-radius: 4px;
+}
+
+/* Accessible keyboard focus */
+.community-dialog #newsletter-email:focus-visible {
+  outline: 3px solid #e57a2d !important;
+}
