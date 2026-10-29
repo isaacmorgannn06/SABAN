@@ -3563,6 +3563,7 @@ html { scroll-padding-top: 145px; }
 /* SABAN - Community Popup Final Design */
 
 .community-dialog {
+    background: #fff8ef;
   width: min(1000px, calc(100% - 24px));
   max-width: 1000px;
   padding: 0;
@@ -3577,7 +3578,7 @@ html { scroll-padding-top: 145px; }
   width: 100%;
   aspect-ratio: 1536 / 1024;
   padding: 0;
-  background-image: url("photos/new%20po%20up.png");
+  background-image: url("photos/newsletter-popup-new.png");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -3680,11 +3681,13 @@ html { scroll-padding-top: 145px; }
 /* Mobile layout */
 @media (max-width: 600px) {
   .community-dialog .community-dialog-copy {
-    aspect-ratio: auto;
-    min-height: 650px;
-    background-size: cover;
-    background-position: 43% center;
-  }
+  aspect-ratio: auto;
+  min-height: 650px;
+  background-color: #fff8ef;
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
 
   .community-dialog form[data-newsletter] {
     top: auto;
