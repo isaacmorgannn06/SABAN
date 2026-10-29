@@ -3552,346 +3552,121 @@ html { scroll-padding-top: 145px; }
 .about-hero{min-height:650px;}.help-bubble{right:12px;bottom:12px;font-size:.7rem;padding:10px 13px;}
 }
 
-/* SABAN Community Popup - New Design */
+/* SABAN - Community Popup Final Design */
+
 .community-dialog {
   width: min(1000px, calc(100% - 24px));
   max-width: 1000px;
-  border: 0;
   padding: 0;
-  background: #f5e9dc;
+  border: 0;
   border-radius: 12px;
   overflow: auto;
 }
 
-.community-dialog-copy {
-  background-image: url("photos/community-popup.png");
+.community-dialog .community-dialog-copy {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 1536 / 1024;
+  padding: 0;
+  background-image: url("photos/new%20po%20up.png");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  aspect-ratio: 1536 / 1024;
-  padding: 0;
-  position: relative;
 }
 
-/* SABAN Community Popup - Fix Overlapping Text */
-
-.community-dialog-copy {
-  position: relative;
-  color: #222;
-}
-
-/* Hide text already included in the background image */
+/* Hide duplicate heading and description */
 .community-dialog-copy > .eyebrow,
 .community-dialog-copy > h2,
-.community-dialog-copy > p {
-  display: none;
+.community-dialog-copy > p:not([data-newsletter-status]) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
-/* Place real form over image */
-.community-dialog [data-newsletter] {
+/* Subscription form */
+.community-dialog form[data-newsletter] {
   position: absolute;
-  left: 53%;
-  top: 55%;
-  width: 43%;
+  top: 60%;
+  left: 54%;
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin: 0;
-  gap: 8px;
-  z-index: 2;
+  z-index: 5;
 }
 
 /* Hide duplicate email label */
-.community-dialog [data-newsletter] > label[for="newsletter-email"] {
-  display: none;
+.community-dialog label[for="newsletter-email"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
 }
 
-/* Real email field */
-.community-dialog [data-newsletter] > input[type="email"] {
-  width: 100%;
-  height: 44px;
-  background: rgba(255,255,255,0.92);
-  border: 1px solid #777;
-  border-radius: 4px;
-  padding: 10px;
-  color: #222;
-}
-
-/* Real subscribe button */
-.community-dialog [data-newsletter] > button[type="submit"] {
-  background: #124575;
-  color: white;
-  border: 0;
-  border-radius: 4px;
-  padding: 10px;
-  width: 100%;
-}
-
-/* Keep consent checkbox visible */
-.community-dialog .consent {
-  color: #222;
-  background: rgba(255,255,255,0.9);
-  padding: 5px;
-  border-radius: 4px;
-  font-size: 12px;
-}
-
-/* SABAN - Remove duplicate popup wording */
-
-.community-dialog .community-dialog-copy > .eyebrow,
-.community-dialog .community-dialog-copy > h2,
-.community-dialog .community-dialog-copy > p:not([data-newsletter-status]) {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip-path: inset(50%) !important;
-  white-space: nowrap !important;
-}
-
-/* Keep the close button visible */
-.community-dialog .dialog-close {
-  z-index: 10;
-  color: #173f68;
-  background: rgba(255,255,255,0.9);
-  border-radius: 50%;
-}
-
-/* SABAN Popup - Working Form Alignment */
-
-.community-dialog .community-dialog-copy {
-  position: relative;
-}
-
-.community-dialog form[data-newsletter] {
-  position: absolute !important;
-  top: 54.5% !important;
-  left: 54% !important;
-  width: 41% !important;
-  margin: 0 !important;
-  gap: 8px !important;
-  z-index: 5;
-}
-
+/* Email field */
 .community-dialog #newsletter-email {
+  order: 1;
   box-sizing: border-box;
-  width: 100% !important;
-  height: 48px !important;
-  background: rgba(255,255,255,0.97) !important;
-  border: 1px solid #777 !important;
-  border-radius: 4px !important;
-  padding: 10px 14px !important;
-  color: #222 !important;
-}
-
-.community-dialog form[data-newsletter] > button[type="submit"] {
-  width: 100% !important;
-  min-height: 48px !important;
-  background: #124575 !important;
-  color: white !important;
-  border-radius: 4px !important;
-  padding: 10px !important;
-}
-
-.community-dialog form[data-newsletter] .consent {
-  order: 3;
-  font-size: 12px !important;
-  color: #222 !important;
-  background: rgba(255,255,255,0.92);
-  padding: 6px;
-  border-radius: 4px;
-}
-
-.community-dialog [data-newsletter-status] {
-  order: 4;
-  color: #222;
-  background: rgba(255,255,255,0.9);
-}
-
-/* SABAN Popup - Working Form Alignment */
-
-.community-dialog .community-dialog-copy {
-  position: relative;
-}
-
-.community-dialog form[data-newsletter] {
-  position: absolute !important;
-  top: 54.5% !important;
-  left: 54% !important;
-  width: 41% !important;
-  margin: 0 !important;
-  gap: 8px !important;
-  z-index: 5;
-}
-
-.community-dialog #newsletter-email {
-  box-sizing: border-box;
-  width: 100% !important;
-  height: 48px !important;
-  background: rgba(255,255,255,0.97) !important;
-  border: 1px solid #777 !important;
-  border-radius: 4px !important;
-  padding: 10px 14px !important;
-  color: #222 !important;
-}
-
-.community-dialog form[data-newsletter] > button[type="submit"] {
-  width: 100% !important;
-  min-height: 48px !important;
-  background: #124575 !important;
-  color: white !important;
-  border-radius: 4px !important;
-  padding: 10px !important;
-}
-
-.community-dialog form[data-newsletter] .consent {
-  order: 3;
-  font-size: 12px !important;
-  color: #222 !important;
-  background: rgba(255,255,255,0.92);
-  padding: 6px;
-  border-radius: 4px;
-}
-
-.community-dialog [data-newsletter-status] {
-  order: 4;
-  color: #222;
-  background: rgba(255,255,255,0.9);
-}
-
-/* SABAN Popup - Remove Duplicate Form Appearance */
-
-.community-dialog form[data-newsletter] {
-  top: 54.5% !important;
-  left: 54% !important;
-  width: 41% !important;
-  gap: 0 !important;
-}
-
-/* Transparent email input over image */
-.community-dialog #newsletter-email {
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  color: #222 !important;
-  height: 48px !important;
-  padding: 10px 14px !important;
-}
-
-/* Transparent button over image */
-.community-dialog form[data-newsletter] > button[type="submit"] {
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  color: transparent !important;
-  min-height: 48px !important;
-  padding: 0 !important;
-}
-
-/* Put consent below subscribe button */
-.community-dialog form[data-newsletter] .consent {
-  order: 3;
-  margin-top: 12px !important;
-  font-size: 12px !important;
-  color: #222 !important;
-  background: rgba(255,255,255,0.95) !important;
-  padding: 8px !important;
-}
-
-/* Preserve visible keyboard focus */
-.community-dialog #newsletter-email:focus-visible,
-.community-dialog form[data-newsletter] > button:focus-visible {
-  outline: 3px solid #e57a2d !important;
-  outline-offset: 2px;
-}
-
-/* SABAN Community Popup - New Image and Form Layout */
-
-.community-dialog {
-  width: min(1000px, calc(100% - 24px)) !important;
-  max-width: 1000px !important;
-  padding: 0 !important;
-  border-radius: 12px;
-  overflow: auto;
-}
-
-.community-dialog .community-dialog-copy {
-  position: relative !important;
   width: 100%;
-  aspect-ratio: 1536 / 1024;
-  padding: 0 !important;
-  background-image: url("photos/new%20po%20up.png") !important;
-  background-size: 100% 100% !important;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Hide duplicated heading text */
-.community-dialog .community-dialog-copy > .eyebrow,
-.community-dialog .community-dialog-copy > h2,
-.community-dialog .community-dialog-copy > p:not([data-newsletter-status]) {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  clip-path: inset(50%) !important;
-}
-
-/* Position working subscription form */
-.community-dialog form[data-newsletter] {
-  position: absolute !important;
-  left: 54% !important;
-  top: 60% !important;
-  width: 41% !important;
-  margin: 0 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 10px !important;
-  z-index: 5;
-}
-
-/* Email input */
-.community-dialog #newsletter-email {
-  box-sizing: border-box;
-  width: 100% !important;
-  height: 48px !important;
-  padding: 12px 14px !important;
-  background: white !important;
-  color: #222 !important;
-  border: 1px solid #888 !important;
-  border-radius: 5px !important;
+  height: 48px;
+  padding: 12px;
+  background: white;
+  color: #222;
+  border: 1px solid #888;
+  border-radius: 5px;
+  box-shadow: none;
 }
 
 /* Consent checkbox */
 .community-dialog form[data-newsletter] .consent {
-  order: 2 !important;
-  display: flex !important;
+  order: 2;
+  display: flex;
+  align-items: flex-start;
   gap: 8px;
-  align-items: center;
-  margin: 0 !important;
-  padding: 4px 0 !important;
-  background: transparent !important;
-  color: #222 !important;
-  font-size: 12px !important;
+  margin: 0;
+  padding: 6px;
+  background: rgba(255,255,255,0.95);
+  color: #222;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 /* Subscribe button */
 .community-dialog form[data-newsletter] > button[type="submit"] {
-  order: 3 !important;
-  width: 100% !important;
-  min-height: 48px !important;
-  padding: 12px !important;
-  background: #124575 !important;
-  color: white !important;
-  border: 0 !important;
-  border-radius: 5px !important;
+  order: 3;
+  width: 100%;
+  min-height: 48px;
+  margin: 0;
+  padding: 12px;
+  background: #124575;
+  color: white;
+  border: 0;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-/* Form status */
+/* Subscription message */
 .community-dialog [data-newsletter-status] {
-  order: 4 !important;
-  color: #222 !important;
-  background: transparent !important;
+  order: 4;
+  color: #222;
+}
+
+/* Close button */
+.community-dialog .dialog-close {
+  position: relative;
+  z-index: 10;
+  color: #173f68;
+  background: white;
+  border-radius: 50%;
 }
 
 /* Mobile layout */
@@ -3899,88 +3674,19 @@ html { scroll-padding-top: 145px; }
   .community-dialog .community-dialog-copy {
     aspect-ratio: auto;
     min-height: 650px;
-    background-size: cover !important;
-    background-position: 43% center !important;
+    background-size: cover;
+    background-position: 43% center;
   }
 
   .community-dialog form[data-newsletter] {
-    left: 8% !important;
-    top: auto !important;
-    bottom: 5% !important;
-    width: 84% !important;
-    padding: 12px !important;
-    background: rgba(255, 250, 245, 0.94);
+    top: auto;
+    bottom: 5%;
+    left: 8%;
+    width: 84%;
+    box-sizing: border-box;
+    padding: 12px;
+    background: rgba(255,250,245,0.95);
     border-radius: 8px;
   }
 }
 
-/* SABAN Popup - Final Form Cleanup */
-
-/* Remove extra email field outline */
-.community-dialog #newsletter-email {
-  appearance: none;
-  box-shadow: none !important;
-  outline: none;
-  background: #fff !important;
-}
-
-/* Remove duplicate visible email label */
-.community-dialog form[data-newsletter]
-  > label[for="newsletter-email"] {
-  display: none !important;
-}
-
-/* Hide any old button text behind the real button */
-.community-dialog form[data-newsletter]
-  > button[type="submit"] {
-  position: relative;
-  z-index: 10;
-  background: #124575 !important;
-  color: #fff !important;
-  opacity: 1 !important;
-}
-
-/* Keep consent above button */
-.community-dialog form[data-newsletter] .consent {
-  position: relative;
-  z-index: 11;
-  background: #fff !important;
-  border-radius: 4px;
-}
-
-/* Accessible keyboard focus */
-.community-dialog #newsletter-email:focus-visible {
-  outline: 3px solid #e57a2d !important;
-}
-
-/* SABAN - Correct subscription form order */
-
-.community-dialog form[data-newsletter] {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 10px !important;
-}
-
-/* Email first */
-.community-dialog #newsletter-email {
-  order: 1 !important;
-}
-
-/* Consent checkbox second */
-.community-dialog form[data-newsletter] .consent {
-  order: 2 !important;
-  position: relative !important;
-  margin: 0 !important;
-  padding: 8px !important;
-  background: #fff !important;
-  color: #222 !important;
-  line-height: 1.4 !important;
-}
-
-/* Subscribe button last */
-.community-dialog form[data-newsletter] > button[type="submit"] {
-  order: 3 !important;
-  position: relative !important;
-  margin: 0 !important;
-  z-index: 2 !important;
-}
