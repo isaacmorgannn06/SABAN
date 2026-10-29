@@ -3551,3 +3551,24 @@ html { scroll-padding-top: 145px; }
 .product-detail{padding-top:150px;}.policy-copy th,.policy-copy td{padding:12px 6px;font-size:.8rem;}
 .about-hero{min-height:650px;}.help-bubble{right:12px;bottom:12px;font-size:.7rem;padding:10px 13px;}
 }
+
+/* SABAN Community Popup - New Design */
+.community-dialog {
+  width: min(1000px, calc(100% - 24px));
+  max-width: 1000px;
+  border: 0;
+  padding: 0;
+  background: #f5e9dc;
+  border-radius: 12px;
+  overflow: auto;
+}
+
+.community-dialog-copy {
+  background-image: url("photos/community-popup.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1536 / 1024;
+  padding: 0;
+  position: relative;
+}
