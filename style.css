@@ -3632,3 +3632,26 @@ html { scroll-padding-top: 145px; }
   border-radius: 4px;
   font-size: 12px;
 }
+
+/* SABAN - Remove duplicate popup wording */
+
+.community-dialog .community-dialog-copy > .eyebrow,
+.community-dialog .community-dialog-copy > h2,
+.community-dialog .community-dialog-copy > p:not([data-newsletter-status]) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+
+/* Keep the close button visible */
+.community-dialog .dialog-close {
+  z-index: 10;
+  color: #173f68;
+  background: rgba(255,255,255,0.9);
+  border-radius: 50%;
+}
