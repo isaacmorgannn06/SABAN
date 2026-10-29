@@ -3803,3 +3803,113 @@ html { scroll-padding-top: 145px; }
   outline: 3px solid #e57a2d !important;
   outline-offset: 2px;
 }
+
+/* SABAN Community Popup - New Image and Form Layout */
+
+.community-dialog {
+  width: min(1000px, calc(100% - 24px)) !important;
+  max-width: 1000px !important;
+  padding: 0 !important;
+  border-radius: 12px;
+  overflow: auto;
+}
+
+.community-dialog .community-dialog-copy {
+  position: relative !important;
+  width: 100%;
+  aspect-ratio: 1536 / 1024;
+  padding: 0 !important;
+  background-image: url("photos/new%20po%20up.png") !important;
+  background-size: 100% 100% !important;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hide duplicated heading text */
+.community-dialog .community-dialog-copy > .eyebrow,
+.community-dialog .community-dialog-copy > h2,
+.community-dialog .community-dialog-copy > p:not([data-newsletter-status]) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+}
+
+/* Position working subscription form */
+.community-dialog form[data-newsletter] {
+  position: absolute !important;
+  left: 54% !important;
+  top: 60% !important;
+  width: 41% !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  z-index: 5;
+}
+
+/* Email input */
+.community-dialog #newsletter-email {
+  box-sizing: border-box;
+  width: 100% !important;
+  height: 48px !important;
+  padding: 12px 14px !important;
+  background: white !important;
+  color: #222 !important;
+  border: 1px solid #888 !important;
+  border-radius: 5px !important;
+}
+
+/* Consent checkbox */
+.community-dialog form[data-newsletter] .consent {
+  order: 2 !important;
+  display: flex !important;
+  gap: 8px;
+  align-items: center;
+  margin: 0 !important;
+  padding: 4px 0 !important;
+  background: transparent !important;
+  color: #222 !important;
+  font-size: 12px !important;
+}
+
+/* Subscribe button */
+.community-dialog form[data-newsletter] > button[type="submit"] {
+  order: 3 !important;
+  width: 100% !important;
+  min-height: 48px !important;
+  padding: 12px !important;
+  background: #124575 !important;
+  color: white !important;
+  border: 0 !important;
+  border-radius: 5px !important;
+  cursor: pointer;
+}
+
+/* Form status */
+.community-dialog [data-newsletter-status] {
+  order: 4 !important;
+  color: #222 !important;
+  background: transparent !important;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .community-dialog .community-dialog-copy {
+    aspect-ratio: auto;
+    min-height: 650px;
+    background-size: cover !important;
+    background-position: 43% center !important;
+  }
+
+  .community-dialog form[data-newsletter] {
+    left: 8% !important;
+    top: auto !important;
+    bottom: 5% !important;
+    width: 84% !important;
+    padding: 12px !important;
+    background: rgba(255, 250, 245, 0.94);
+    border-radius: 8px;
+  }
+}
