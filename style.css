@@ -3724,3 +3724,8 @@ bottom: 8%;
 .about-nodules .sage-note {
   color: #123722;
 }
+
+/* SABAN - Reduce space after Shower Ritual Finder */
+#ritual-finder {
+  padding-bottom: 48px;
+}
