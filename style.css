@@ -3747,4 +3747,7 @@ bottom: 8%;
 .about-nodules .about-editorial-copy > p:not(.sage-note):not(.eyebrow) {
   color: #494943;
 }
-
+/* SABAN - Refine collection heading spacing */
+#collection .section-heading-row {
+  margin-bottom: 32px;
+}
