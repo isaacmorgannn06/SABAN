@@ -7,7 +7,7 @@
 
     --White: #FFFFFF;
     --Ink: #0B0909;
-    --Text: #40403C;
+    --Text: #494943;
     --Muted: #818279;
     --Collection-Background: #F7EBDE;
 
@@ -44,7 +44,7 @@ body {
     margin: 0;
 
     color: var(--Text);
-    background: var(--White);
+    background: #F7F0E6;
 
     font-family: var(--Secondary-font);
 
