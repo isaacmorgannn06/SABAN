@@ -3743,3 +3743,8 @@ bottom: 8%;
   padding-top: 24px;
 }
 
+/* SABAN - Improve readability of Signature Massage Nodules text */
+.about-nodules .about-editorial-copy > p:not(.sage-note):not(.eyebrow) {
+  color: #494943;
+}
+
