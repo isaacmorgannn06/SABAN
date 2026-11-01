@@ -3751,3 +3751,7 @@ bottom: 8%;
 #collection .section-heading-row {
   margin-bottom: 32px;
 }
+/* SABAN - Hide product values on all five shop cards */
+.shop-product-card .product-values {
+  display: none !important;
+}
