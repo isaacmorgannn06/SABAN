@@ -2760,7 +2760,7 @@ button:focus-visible {
         clamp(100px, 13vw, 190px)
         0;
 
-    background-color: #FFFFFF;
+    background-color: #F7F0E6;
 }
 
 .about-philosophy-grid {
@@ -2810,7 +2810,7 @@ button:focus-visible {
 }
 
 .about-nodules {
-    background-color: #FFFFFF;
+    background-color: #F7F0E6;
 }
 
 .about-editorial-grid,
