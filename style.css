@@ -182,6 +182,8 @@ button {
 
 
 .feature-heading {
+
+
     font-size: clamp(
         2.1rem,
         3.5vw,
@@ -3728,4 +3730,8 @@ bottom: 8%;
 /* SABAN - Reduce space after Shower Ritual Finder */
 #ritual-finder {
   padding-bottom: 48px;
+}
+/* SABAN - Balanced spacing above Beyond Bar Collection */
+#collection {
+  padding-top: 64px;
 }
