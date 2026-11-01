@@ -167,8 +167,24 @@
       <p>
        Organic Turmeric Extract
       </p>
-      <p class="detail-price">
-       $15.00 CAD
+     
+       <p class="detail-price" id="glow-price">
+  $15.95 CAD
+</p>
+
+<div class="ritual-options">
+  <p class="ritual-options-title">Choose Your Ritual</p>
+
+  <label class="ritual-option">
+    <input type="radio" name="glow-ritual" value="original" checked>
+    Original Ritual — Without Loofah · $15.95
+  </label>
+
+  <label class="ritual-option">
+    <input type="radio" name="glow-ritual" value="loofah">
+    Exfoliating Ritual — With Natural Loofah · $17.95
+  </label>
+</div>
       </p>
       <a class="text-link" href="contact.html">
        ENQUIRE ABOUT THIS BAR →
@@ -398,5 +414,22 @@
   <a aria-label="Contact SĀBAN for help" class="help-bubble" href="contact.html">
    Need help?
   </a>
- </body>
+  </a>
+
+<script>
+document.querySelectorAll('input[name="glow-ritual"]').forEach(function(option) {
+  option.addEventListener('change', function() {
+    const price = document.getElementById('glow-price');
+
+    if (this.value === 'loofah') {
+      price.textContent = '$17.95 CAD';
+    } else {
+      price.textContent = '$15.95 CAD';
+    }
+  });
+});
+</script>
+
+</body>
 </html>
+ 
