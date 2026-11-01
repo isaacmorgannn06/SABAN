@@ -3755,3 +3755,46 @@ bottom: 8%;
 .shop-product-card .product-values {
   display: none !important;
 }
+
+/* SABAN - Ritual selection styling */
+.ritual-options {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.ritual-options-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f4c7a;
+  margin-bottom: 16px;
+}
+
+.ritual-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  border: 1px solid #d9cfc3;
+  border-radius: 8px;
+  background: #fffaf5;
+  color: #1f4c7a;
+  font-size: 15px;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.ritual-option:hover {
+  border-color: #1f4c7a;
+}
+
+.ritual-option:has(input:checked) {
+  border-color: #1f4c7a;
+  background: #f3e9dd;
+}
+
+.ritual-option input[type="radio"] {
+  accent-color: #1f4c7a;
+  flex-shrink: 0;
+}
