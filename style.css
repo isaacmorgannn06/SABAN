@@ -3727,11 +3727,18 @@ bottom: 8%;
   color: #123722;
 }
 
+
 /* SABAN - Reduce space after Shower Ritual Finder */
 #ritual-finder {
   padding-bottom: 48px;
 }
-/* SABAN - Balanced spacing above Beyond Bar Collection */
-#collection {
-  padding-top: 64px;
+
+/* SABAN - Reduce spacing between sections */
+.about-nodules {
+  padding-bottom: 24px;
 }
+
+#collection {
+  padding-top: 24px;
+}
+
