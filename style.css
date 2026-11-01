@@ -3702,3 +3702,26 @@ bottom: 8%;
   }
 }
 
+/* SABAN - Signature Massage Nodules Design */
+
+.about-nodules .saban-touch-heading {
+  color: #123722;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.about-nodules .saban-touch-accent {
+  display: block;
+  color: #C65D32;
+  font-style: italic;
+}
+
+.about-nodules .about-editorial-copy > p:not(.sage-note) {
+  color: #494943;
+}
+
+.about-nodules .sage-note {
+  color: #123722;
+}
+
