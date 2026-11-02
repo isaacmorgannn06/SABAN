@@ -169,7 +169,7 @@
       </p>
      
        <p class="detail-price" id="glow-price">
-  $15.95 CAD
+  $15.00 CAD
 </p>
 
 <div class="ritual-options">
@@ -177,15 +177,15 @@
 
   <label class="ritual-option">
     <input type="radio" name="glow-ritual" value="original" checked>
-    Original Ritual — Without Loofah · $15.95
+    Original Ritual — Without Loofah · $15.00
   </label>
 
   <label class="ritual-option">
     <input type="radio" name="glow-ritual" value="loofah">
-    Exfoliating Ritual — With Natural Loofah · $17.95
+    Exfoliating Ritual — Natural Loofah Embedded in the Bar · $16.00
   </label>
 </div>
-      </p>
+  
       <a class="text-link" href="contact.html">
        ENQUIRE ABOUT THIS BAR →
       </a>
@@ -422,9 +422,9 @@ document.querySelectorAll('input[name="glow-ritual"]').forEach(function(option) 
     const price = document.getElementById('glow-price');
 
     if (this.value === 'loofah') {
-      price.textContent = '$17.95 CAD';
+      price.textContent = '$16.00 CAD';
     } else {
-      price.textContent = '$15.95 CAD';
+      price.textContent = '$15.00 CAD';
     }
   });
 });
