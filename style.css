@@ -3758,6 +3758,9 @@ bottom: 8%;
 
 /* SABAN - Ritual selection styling */
 .ritual-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin-top: 28px;
   margin-bottom: 28px;
 }
@@ -3771,6 +3774,7 @@ bottom: 8%;
 
 .ritual-option {
   display: flex;
+width: 100%;
   align-items: center;
   gap: 14px;
   padding: 18px 20px;
