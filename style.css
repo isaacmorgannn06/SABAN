@@ -667,22 +667,14 @@ button {
   padding: 32px 28px;
   background: #fffdfb;
   border: 1px solid #eee3da;
-  
+}
+
 .testimonial-quote {
   margin: 0;
   color: #514c48;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.7;
-}
-
-    margin: 0;
-
-    color: var(--Text);
-
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.8;
+  line-height: 1.8;
 }
 
 .testimonial-author {
@@ -3814,4 +3806,75 @@ width: 100%;
   display: flex;
   width: 100%;
   box-sizing: border-box;
+}
+
+/* SĀBAN — community popup polish, November 2026 */
+.community-dialog {
+  position: relative;
+  width: min(900px, calc(100% - 32px));
+  max-width: 900px;
+  max-height: min(90dvh, 850px);
+  border-radius: 10px;
+  background: #fff8ef;
+  box-shadow: 0 24px 80px rgba(11, 9, 9, .22);
+}
+.community-dialog::backdrop {
+  background: rgba(11, 9, 9, .62);
+  backdrop-filter: blur(3px);
+}
+.community-dialog .dialog-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid rgba(31, 76, 122, .18);
+  border-radius: 50%;
+  background: rgba(255, 250, 245, .96);
+  color: var(--Dusk-Blue);
+  line-height: 1;
+}
+.community-dialog .dialog-close:hover { background: #fff; }
+.community-dialog form[data-newsletter] { gap: 8px; }
+.community-dialog #newsletter-email {
+  min-height: 48px;
+  border-color: rgba(31, 76, 122, .35);
+  font-size: 16px;
+}
+.community-dialog form[data-newsletter] .consent {
+  background: rgba(255, 250, 245, .97);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.community-dialog form[data-newsletter] > button[type="submit"] {
+  background: var(--Dusk-Blue);
+  font-weight: 600;
+  letter-spacing: .04em;
+  transition: background-color .2s ease;
+}
+.community-dialog form[data-newsletter] > button[type="submit"]:hover {
+  background: #173a60;
+}
+@media (max-width: 600px) {
+  .community-dialog {
+    width: calc(100% - 24px);
+    max-height: calc(100dvh - 24px);
+  }
+  .community-dialog .community-dialog-copy {
+    min-height: 650px;
+  }
+  .community-dialog form[data-newsletter] {
+    bottom: 4%;
+    left: 6%;
+    width: 88%;
+    padding: 12px;
+  }
+  .community-dialog .dialog-close {
+    top: 8px;
+    right: 8px;
+  }
 }
