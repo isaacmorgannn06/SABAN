@@ -3878,3 +3878,15 @@ width: 100%;
     right: 8px;
   }
 }
+
+/* SĀBAN — final newsletter popup spacing refinement */
+@media (min-width: 601px) {
+  .community-dialog .community-dialog-copy {
+    aspect-ratio: auto;
+    height: clamp(500px, 58vw, 570px);
+    background-size: 100% 100%;
+  }
+  .community-dialog form[data-newsletter] {
+    bottom: 5%;
+  }
+}
