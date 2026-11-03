@@ -3802,3 +3802,16 @@ width: 100%;
   accent-color: #1f4c7a;
   flex-shrink: 0;
 }
+/* SĀBAN – Align ritual heading and selection boxes */
+.product-detail-copy .ritual-options {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.product-detail-copy .ritual-option {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
