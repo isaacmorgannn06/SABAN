@@ -3924,3 +3924,37 @@ width: 100%;
 .product-accordions .product-intro-line {
   margin-top: 0;
 }
+
+/* SĀBAN — Premium product accordion design */
+.product-accordions {
+  background: #F8F2E9;
+  border-radius: 20px;
+  padding: 8px 24px;
+  margin-top: 28px;
+}
+
+.product-accordions .accordion {
+  border-top: 1px solid #D8D3CB;
+}
+
+.product-accordions .accordion:last-child {
+  border-bottom: 0;
+}
+
+.product-accordions .accordion summary {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #244E75;
+  padding: 18px 28px 18px 0;
+}
+
+.product-accordions .accordion summary::after {
+  top: 16px;
+  font-size: 20px;
+}
+
+.product-accordions .product-accordion-content {
+  padding-bottom: 16px;
+}
