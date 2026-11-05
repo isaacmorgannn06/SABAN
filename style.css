@@ -1176,7 +1176,7 @@ button {
         1px solid
         rgba(31, 76, 122, 0.14);
 
-    color: var(--Muted);
+    color: #595A55;
 
     font-size: 0.82rem;
 }
@@ -2536,7 +2536,7 @@ button:focus-visible {
 .shop-product-ingredient {
     margin: 0;
 
-    color: var(--Muted);
+    color: #494943;
 
     font-size: 0.88rem;
 }
