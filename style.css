@@ -3890,3 +3890,23 @@ width: 100%;
     bottom: 5%;
   }
 }
+
+/* SĀBAN — Compact luxury product descriptions */
+.product-accordions .product-accordion-content {
+  font-size: 15px;
+  line-height: 1.5;
+  padding-bottom: 16px;
+}
+
+.product-accordions .product-accordion-content p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.product-accordions .product-accordion-content .product-intro-line {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
