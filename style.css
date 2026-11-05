@@ -2561,7 +2561,7 @@ button:focus-visible {
         1px solid
         rgba(31, 76, 122, 0.15);
 
-    color: var(--Muted);
+    color: #595A55;
 
     font-size: 0.82rem;
 }
