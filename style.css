@@ -3499,7 +3499,7 @@ html { scroll-padding-top: 145px; }
 .accordion[open]>summary::after {content:'−';}
 .accordion summary:focus-visible {outline:2px solid var(--Dusk-Blue);outline-offset:3px;}
 .accordion-body {font-size:.9rem;line-height:1.6;padding-bottom:25px;overflow-wrap:anywhere;}
-.accordion-body h2 {font:400 1.8rem/1.2 Georgia,serif;color:var(--Dusk-Blue);}
+.accordion-body h2 {font-family:inherit;font-size:1.15rem;font-weight:500;line-height:1.4;color:#494943;}
 .accordion-body h3 {font-size:.73rem;text-transform:uppercase;letter-spacing:.1em;color:var(--Dusk-Blue);margin-top:25px;}
 .faq-layout {display:grid;grid-template-columns:230px 1fr;gap:70px;}
 .faq-nav {display:flex;flex-direction:column;gap:20px;align-self:start;position:sticky;top:160px;}
