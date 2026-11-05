@@ -3910,3 +3910,17 @@ width: 100%;
   line-height: 1.4;
   margin-bottom: 16px;
 }
+
+/* Reduce space below product accordion headings */
+.product-accordions .accordion summary {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.product-accordions .product-accordion-content {
+  padding-top: 0;
+}
+
+.product-accordions .product-intro-line {
+  margin-top: 0;
+}
