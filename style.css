@@ -3493,7 +3493,7 @@ html { scroll-padding-top: 145px; }
 .product-accordions {margin-top:38px;}
 .accordion {border-top:1px solid var(--line);}
 .accordion:last-child {border-bottom:1px solid var(--line);}
-.accordion summary {cursor:pointer;list-style:none;padding:24px 32px 24px 0;position:relative;font-size:.95rem;color:var(--Dusk-Blue);line-height:1.6;}
+.accordion summary {cursor:pointer;list-style:none;padding:18px 32px 18px 0;position:relative;font-size:.95rem;color:var(--Dusk-Blue);line-height:1.6;}
 .accordion summary::-webkit-details-marker {display:none;}
 .accordion summary::after {content:'+';position:absolute;right:4px;top:22px;font-size:1.3rem;}
 .accordion[open]>summary::after {content:'−';}
