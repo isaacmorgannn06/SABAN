@@ -3463,7 +3463,7 @@ html { scroll-padding-top: 145px; }
 .product-values li {display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;font-size:.6rem;line-height:1.5;letter-spacing:.04em;text-transform:uppercase;color:var(--Dusk-Blue);}
 .product-values img,.value-icon {width:28px;height:28px;}
 .product-image-link img,.shop-product-image img {aspect-ratio:4/3;object-fit:contain;background:white;}
-.ritual-options button {border-color:transparent;color:var(--Dusk-Blue);}
+.ritual-options button {border-color:transparent;color:#244467;font-size:20px;font-weight:500;letter-spacing:0.01em;}
 .ritual-options [data-ritual=refresh] {background:#e2eadc;}
 .ritual-options [data-ritual=brighten] {background:#fae8bf;}
 .ritual-options [data-ritual=purify] {background:#e3e5ec;}
