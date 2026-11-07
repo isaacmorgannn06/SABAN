@@ -3498,7 +3498,7 @@ html { scroll-padding-top: 145px; }
 .accordion summary::after {content:'+';position:absolute;right:4px;top:22px;font-size:1.3rem;}
 .accordion[open]>summary::after {content:'−';}
 .accordion summary:focus-visible {outline:2px solid var(--Dusk-Blue);outline-offset:3px;}
-.accordion-body {font-size:.9rem;line-height:1.6;padding-bottom:25px;overflow-wrap:anywhere;}
+.accordion-body {font-size:.9rem;line-height:1.6;padding-bottom:12px;overflow-wrap:anywhere;}
 .accordion-body h2 {font-family:inherit;font-size:1.15rem;font-weight:500;line-height:1.4;color:#494943;}
 .accordion-body h3 {font-size:.73rem;text-transform:uppercase;letter-spacing:.1em;color:var(--Dusk-Blue);margin-top:25px;}
 .faq-layout {display:grid;grid-template-columns:230px 1fr;gap:70px;}
