@@ -3958,3 +3958,7 @@ width: 100%;
 .product-accordions .product-accordion-content {
   padding-bottom: 16px;
 }
+/* SĀBAN – Velvet Bar spacing adjustment */
+.velvet-detail {
+  padding-bottom: 30px;
+}
