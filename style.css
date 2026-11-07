@@ -3962,3 +3962,7 @@ width: 100%;
 .velvet-detail {
   padding-bottom: 30px;
 }
+/* SĀBAN – Consistent spacing for all product bars */
+.product-detail-copy .product-accordions {
+  margin-top: 20px;
+}
