@@ -186,7 +186,7 @@ const ritualData = {
             "by Organic Spirulina Extract.",
 
         href: "vitality.html",
-        image: "photos/soap1.png"
+        image: "photos/Vitality bar.png"
     },
 
 
