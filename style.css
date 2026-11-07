@@ -3966,3 +3966,7 @@ width: 100%;
 .product-detail-copy .product-accordions {
   margin-top: 20px;
 }
+/* SĀBAN – Consistent spacing below product galleries */
+.product-detail {
+  padding-bottom: 30px;
+}
