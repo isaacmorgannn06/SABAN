@@ -3970,3 +3970,12 @@ width: 100%;
 .product-detail {
   padding-bottom: 30px;
 }
+
+/* SĀBAN homepage hero description */
+.hero-description {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 650px;
+  font-weight: 400;
+}
