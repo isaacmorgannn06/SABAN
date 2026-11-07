@@ -1,6 +1,25 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://saban.ca/</loc>
+  </url>
+  <url>
+    <loc>https://saban.ca/shop.html</loc>
+  </url>
+  <url>
+    <loc>https://saban.ca/vitality.html</loc>
+  </url>
+  <url>
+    <loc>https://saban.ca/glow.html</loc>
+  </url>
+  <url>
+    <loc>https://saban.ca/detox.html</loc>
+  </url>
+  <url>
+    <loc>https://saban.ca/velvet.html</loc>
+  </url>
+  <url>
+    <loc>https://saban.ca/moisture.html</loc>
   </url>
 </urlset>
