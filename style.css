@@ -3972,7 +3972,7 @@ width: 100%;
 }
 
 /* SĀBAN homepage hero description */
-.hero-description {
+color: #ffffff !important;
   color: #ffffff;
   font-size: 18px;
   line-height: 1.6;
