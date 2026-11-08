@@ -226,7 +226,7 @@ const ritualData = {
             "for skin that feels smooth and renewed.",
 
         href: "velvet.html",
-        image: "photos/soap3.png"
+        image: "photos/Velvet Soap Bar.png"
     },
 
 
