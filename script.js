@@ -200,7 +200,7 @@ const ritualData = {
             "radiant, revived feel.",
 
         href: "glow.html",
-        image: "photos/soap2.png"
+        image: "photos/Glow massage bar (1).png"
     },
 
 
