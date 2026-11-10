@@ -36,8 +36,14 @@
       text-align: center;
     }    
 .island-intro + .island-intro {
-  padding-top: 25px;
+  padding-top: 20px;
 }
+
+.island-intro:has(+ .island-intro) {
+  padding-bottom: 25px;
+}
+
+
 
     .island-eyebrow {
       font-size: 12px;
