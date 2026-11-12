@@ -213,7 +213,7 @@ const ritualData = {
             "feels fresh, purified and reset.",
 
         href: "detox.html",
-        image: "photos/soap4.png"
+        image: "photos/Detox.png"
     },
 
 
