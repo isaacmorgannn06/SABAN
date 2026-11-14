@@ -4030,3 +4030,25 @@ color: #ffffff !important;
     font-size: 20px;
   }
 }
+
+/* Keep SĀBAN product values in three equal columns */
+.saban-values {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.saban-values .saban-value {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .saban-values .saban-value {
+    flex-direction: column;
+  }
+}
