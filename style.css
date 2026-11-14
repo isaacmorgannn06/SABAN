@@ -3979,3 +3979,54 @@ color: #ffffff !important;
   max-width: 650px;
   font-weight: 400;
 }
+
+/* SĀBAN product values */
+.saban-values {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px 0;
+  padding: 18px 0;
+  border-top: 1px solid rgba(31, 76, 122, 0.16);
+  border-bottom: 1px solid rgba(31, 76, 122, 0.16);
+}
+
+.saban-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+  color: #1f4c7a;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.saban-value:not(:last-child) {
+  border-right: 1px solid rgba(31, 76, 122, 0.16);
+}
+
+.saban-value-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  .saban-values {
+    gap: 5px;
+  }
+
+  .saban-value {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 9px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  .saban-value-icon {
+    font-size: 20px;
+  }
+}
